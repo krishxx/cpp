@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ctl_one">
+</Property><Property Name="Solution File" Value="D:\projects\graphics\ctl_one\ctl_one.sln">
+</Property><Property Name="Date" Value="Monday, May 29, 2017">
+</Property><Property Name="Time" Value="15:45:08 PM">
+</Property></Properties><Event ErrorLevel="0" Project="ctl_one" Source="ctl_one.vcproj" Description="Converting project file 'D:\projects\graphics\ctl_one\ctl_one.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ctl_one" Source="ctl_one.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="ctl_one" Source="ctl_one.vcproj" Description="MSB8012: $(TargetPath) ('D:\projects\graphics\ctl_one\.\Release\ctl_one.exe') does not match the Linker's OutputFile property value '.\Release/ctl_one.exe' ('D:\projects\graphics\ctl_one\Release/ctl_one.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="ctl_one" Source="ctl_one.vcproj" Description="MSB8012: $(TargetPath) ('D:\projects\graphics\ctl_one\.\Debug\ctl_one.exe') does not match the Linker's OutputFile property value '.\Debug/ctl_one.exe' ('D:\projects\graphics\ctl_one\Debug/ctl_one.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="ctl_one" Source="ctl_one.vcproj" Description="Done converting to new project file 'D:\projects\graphics\ctl_one\ctl_one.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ctl_one" Source="ctl_one.vcproj" Description="Converted">
+</Event></UpgradeLog>
