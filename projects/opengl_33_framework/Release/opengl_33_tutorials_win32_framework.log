@@ -1,0 +1,28 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Common.props(150,5): warning MSB4211: The property "WindowsTargetPlatformVersion" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.props (29,5)".
+  buffer.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  camera.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  glmath.cpp
+glmath.cpp(12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(53): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(72): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(87): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(103): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(597): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+glmath.cpp(617): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  myopengl33renderer.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  opengl33app.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  opengl33renderer.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  opengl33view.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  shaderprogram.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory
+  string.cpp
+  texture.cpp
+d:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\header.h(12): fatal error C1083: Cannot open include file: 'gl/glew.h': No such file or directory

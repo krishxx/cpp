@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="opengl_33_tutorials_win32_framework">
+</Property><Property Name="Solution File" Value="D:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework.sln">
+</Property><Property Name="Date" Value="Monday, May 29, 2017">
+</Property><Property Name="Time" Value="1:00:48 AM">
+</Property></Properties><Event ErrorLevel="0" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="Converting project file 'D:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework.vcproj'.">
+</Event><Event ErrorLevel="1" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="Done converting to new project file 'D:\projects\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework\opengl_33_tutorials_win32_framework.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="opengl_33_tutorials_win32_framework" Source="opengl_33_tutorials_win32_framework.vcproj" Description="Converted">
+</Event></UpgradeLog>
