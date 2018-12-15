@@ -1,0 +1,7 @@
+projects\html_learning : mypage.html,mypage2.html,mypage3.html
+projects\ARVR : F1,F2,scripts,sdk_installation_requirements.docx,~$k_installation_requirements.docx
+projects\ARVR\F1 : sample
+projects\ARVR\F2 : sample
+projects\ARVR\scripts : compareFolders.py,generateLevelOrder.py,sample.txt,sampleOut.yml
+projects\ARVR\F1\sample : text1.txt
+projects\ARVR\F2\sample : text2.txt
