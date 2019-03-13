@@ -13,6 +13,7 @@ class Matrix
 		void transpose();
 		void rotate();
 		void print_helical();
+		void k-rotate();
 		~Matrix();
 };
 
@@ -87,6 +88,54 @@ void Matrix::rotate()
 	data[0][0]=curr;
 }
 
+void Matrix::anti_clockwise_rotate()
+{
+	int i=0,curr=0,next=0;
+	int sr=0,sc=0,er=rows-1,ec=cols-1;
+	curr=data[sr][ec];
+	while((sr<er) || (sc<ec))
+	{
+		for(i=ec;i>=sc;i--)
+		{
+			next = data[sr][i];
+			data[sr][i]=curr;
+			curr = next;
+		}
+		sr++;
+		for(i=sr;i<=er;i++)
+		{
+			next = data[i][ec];
+			data[i][ec]=curr;
+			curr = next;
+		}
+		sc++;
+
+		for(i=sc;i<=ec;i++)
+		{
+			next = data[er][i];
+			data[er][i]=curr;
+			curr = next;
+		}
+		er--;
+		for(i=er;i>=sr;i--)
+		{
+			next = data[i][ec];
+			data[i][ec]=curr;
+			curr = next;
+		}
+		ec--;
+	}
+	data[sr][ec]=curr;
+}
+
+Matrix::~Matrix()
+{
+	delete [] data;
+}
+
+void Matrix::print_matrix()//(int **mat, int m, int n)
+{
+
 Matrix::~Matrix()
 {
 	delete [] data;
@@ -134,19 +183,44 @@ void Matrix::print_helical()
         cout<<'\b'<<'\b'<<endl;
 }
 
+void Matrix::anti_clockwise_rotate()
+{
+	//TBD
+}
 
 int main()
 {
 	Matrix m1;
 	cout<<"Original Matrix "<<endl;
 	m1.print_matrix();
-	m1.rotate();
-	cout<<"After Rotate "<<endl;
+//	m1.rotate();
+//	cout<<"After Rotate "<<endl;
+//	m1.print_matrix();
+//	m1.transpose();
+//	cout<<"After Transpose "<<endl;
+//	m1.print_matrix();
+//	m1.print_helical();
+
+	m1.anti_clockwise_rotate();
 	m1.print_matrix();
-	m1.transpose();
-	cout<<"After Transpose "<<endl;
-	m1.print_matrix();
-	m1.print_helical();
 
 	return 0;
 }
+
+/*
+Inplace (Fixed space) M x N size matrix transpose | Updated
+Rotate Matrix Elements
+Rotate a Matrix by 180 degree
+Rotate the matrix right by K times
+Rotate a matrix by 90 degree without using any extra space | Set 2
+Rotate each ring of matrix anticlockwise by K elements
+Rotate a matrix by 90 degree in clockwise direction without using any extra space
+Maximum size square sub-matrix with all 1s
+Maximum and Minimum in a square matrix.
+How to access elements of a Square Matrix
+Check given matrix is magic square or not
+Print maximum sum square sub-matrix of given size
+Given an n x n square matrix, find sum of all sub-squares of size k x k
+Product of middle row and column in an odd square matrix
+Sum of both diagonals of a spiral odd-order square matrix
+*/
