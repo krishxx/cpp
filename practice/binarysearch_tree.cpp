@@ -46,19 +46,19 @@ void tree::add_node(int element)
 		tr = temp;
 	else
 	{
-		tree_node *curr;
+		tree_node *curr,*prev;
 		curr = tr;
+		prev = NULL;
 		while(curr != NULL) //(curr->left != NULL) && (curr->right != NULL))
 		{	
-			if((temp->data < curr->data) && (curr->left != NULL))
-				curr = curr->left;
-			else	
-				curr = curr->right;	
+			prev = curr;
+			curr = (temp->data < curr->data)?(curr->left):(curr->right);
 		}
-		if(temp->data < curr->data)
-			curr->left = temp;
+		
+		if(temp->data < prev->data)
+			prev->left = temp;
 		else
-			curr->right = temp;
+			prev->right = temp;
 	}
 }
 
@@ -137,8 +137,8 @@ int main()
 	//t1.create_tree();
 	//t1.print_inorder();
 	t1.add_node(30);
-	t1.add_node(20);
-	t1.add_node(40);
-	//t1.print_iterative_inorder();
+	//t1.add_node(20);
+	//t1.add_node(40);
+	t1.print_iterative_inorder();
 	return 0;
 }
