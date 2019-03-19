@@ -140,10 +140,8 @@ tree_node* closestAncestor(tree_node *root, tree_node *p, tree_node *q)
 
 void levelOrderTraversal(tree_node *root)
 {
-/*	tree_node q[20];
+	tree_node *q[20]={NULL};
 	int size = 0, qp = 0;
-	tree_node *temp;
-	temp = root;
 	
 	while(root!=NULL)
 	{
@@ -153,7 +151,7 @@ void levelOrderTraversal(tree_node *root)
 		if(root->right)
 			q[size++]=root->right;
 		root=q[qp++];		
-	}*/
+	}
 }
 
 int rootToLeafMaxSum(tree_node *root)
@@ -187,10 +185,12 @@ int main()
 	cout<<"Post Order"<<endl;
 	traverse_postorder(root);
 	cout<<endl;
+	cout<<"Level Order"<<endl;
+	levelOrderTraversal(root);
+	cout<<endl;
+	cout<<"Counts"<<endl;
 	cout<<"Depth of the tree	:	"<<depth_of_tree(root)<<endl;
 	cout<<"Size of the tree	:	"<<size_of_tree(root)<<endl;
-	//cout<<"Level Order"<<endl;
-	//levelOrderTraversal(root);
 	cout<<"RootToLeaf MaxSum	:	"<<rootToLeafMaxSum(root)<<endl;
 	return 0;
 }
