@@ -156,15 +156,16 @@ void levelOrderTraversal(tree_node *root)
 	}*/
 }
 
-void maxPathSum(tree_node *root)
+int rootToLeafMaxSum(tree_node *root)
 {
 	if(root==NULL)
 		return 0;
-	int l=maxPathSum(root->left);
-	int r=maxPathSum(root->right);
-
-	int maxSingle=max((max(l,r)+root->data),root->data);
-	int maxTop=max(maxSingle,
+	else
+	{
+		int l=rootToLeafMaxSum(root->left);
+		int r=rootToLeafMaxSum(root->right);
+		return ((l>r?l:r)+root->data);
+	}
 }
 
 int main()
@@ -186,9 +187,10 @@ int main()
 	cout<<"Post Order"<<endl;
 	traverse_postorder(root);
 	cout<<endl;
-	cout<<"Depth of the tree:	"<<depth_of_tree(root)<<endl;
-	cout<<"Size of the tree:	"<<size_of_tree(root)<<endl;
-	cout<<"Level Order"<<endl;
-	levelOrderTraversal(root);	
+	cout<<"Depth of the tree	:	"<<depth_of_tree(root)<<endl;
+	cout<<"Size of the tree	:	"<<size_of_tree(root)<<endl;
+	//cout<<"Level Order"<<endl;
+	//levelOrderTraversal(root);
+	cout<<"RootToLeaf MaxSum	:	"<<rootToLeafMaxSum(root)<<endl;
 	return 0;
 }
