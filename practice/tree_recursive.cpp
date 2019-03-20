@@ -166,6 +166,22 @@ int rootToLeafMaxSum(tree_node *root)
 	}
 }
 
+bool printMaxSumPath(tree_node *root, int sum)
+{
+	if(sum==0)
+		return true;
+	if(root == NULL)
+		return false;
+
+	bool leftSum=printMaxSumPath(root->left, sum-root->data);
+	bool rightSum=printMaxSumPath(root->right, sum-root->data);
+
+	if(leftSum||rightSum)
+		cout<<"["<<root->data<<"] ";
+
+	return leftSum||rightSum;
+}
+
 int main()
 {
 	add_node(4);
@@ -176,21 +192,25 @@ int main()
 	add_node(1);
 	add_node(6);
 	tree_mirror(root);
-	cout<<"In Order"<<endl;
+	cout<<"In Order	:	";
 	traverse_inorder(root);
 	cout<<endl;
-	cout<<"pre Order"<<endl;
+	cout<<"pre Order	:	";
 	traverse_preorder(root);
 	cout<<endl;
-	cout<<"Post Order"<<endl;
+	cout<<"Post Order	:	";
 	traverse_postorder(root);
 	cout<<endl;
-	cout<<"Level Order"<<endl;
+	cout<<"Level Order	:	";
 	levelOrderTraversal(root);
 	cout<<endl;
 	cout<<"Counts"<<endl;
-	cout<<"Depth of the tree	:	"<<depth_of_tree(root)<<endl;
-	cout<<"Size of the tree	:	"<<size_of_tree(root)<<endl;
-	cout<<"RootToLeaf MaxSum	:	"<<rootToLeafMaxSum(root)<<endl;
+	cout<<"Depth		:	"<<depth_of_tree(root)<<endl;
+	cout<<"Size		:	"<<size_of_tree(root)<<endl;
+	cout<<"MaxSum From root:	"<<rootToLeafMaxSum(root)<<endl;
+	cout<<"Max sum path	:	";
+	printMaxSumPath(root, rootToLeafMaxSum(root));
+	
+	cout<<endl;
 	return 0;
 }
