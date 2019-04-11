@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <stack>
 #include "utils.h"
+#include <queue>
 
 using namespace std;
 
@@ -182,6 +183,22 @@ bool printMaxSumPath(tree_node *root, int sum)
 	return leftSum||rightSum;
 }
 
+void lot(tree_node *root) //level order traversal2
+{
+	tree_node *temp;
+	std::queue<tree_node> *q1=new queue<tree_node>();
+	temp=root;
+	q1.push(temp);
+	while(!q1.empty())
+	{
+		cout<<endl;
+		cout<<"Inside loop with Que"<<endl;
+		temp = q1.pop();
+		cout<<temp->data;
+		cout<<endl;
+	}
+}
+
 int main()
 {
 	add_node(4);
@@ -210,6 +227,7 @@ int main()
 	cout<<"MaxSum From root:	"<<rootToLeafMaxSum(root)<<endl;
 	cout<<"Max sum path	:	";
 	printMaxSumPath(root, rootToLeafMaxSum(root));
+	lot(root);
 	
 	cout<<endl;
 	return 0;

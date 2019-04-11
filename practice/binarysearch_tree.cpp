@@ -126,7 +126,6 @@ void tree::print_iterative_postorder()
 	tree_node *save[20];
 	tree_node *root, *temp;
 	root=tr;
-
 	
 }
 
